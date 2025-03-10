@@ -1,0 +1,93 @@
+/*
+ ----------------------  variables  ------------------------------- 
+	void   => empty type
+	char   => Syngle character 
+	int    => Integer  
+	long   => Integer than can hold larger values 
+	float  => Decimal numbers
+	double => Decimal number with more precision 
+---------------------------------------------------------------------
+*/
+
+
+int count = 10;
+char last_initia = 'j';
+long age_of_universe = 13798000000;
+float liter_d = 0.525f;
+double speed_of_something = 0.2545845;
+
+
+
+/*
+ ----------------------  function  ------------------------------- 
+	<return-value> name_funcion(<parameter>){
+		<body>
+	}
+ ---------------------------------------------------------------------
+*/
+
+
+int add_numbers(int x, int y){
+	int result = x + y;
+	return result; 
+}
+
+
+
+/*
+ ----------------------  structure declarations  ------------------------------- 
+ struct myStructure {
+    int myNum;
+    char myLetter;
+};
+---------------------------------------------------------------------
+*/
+
+
+struct point{
+	int x;
+	int y;
+}
+//de esta forma es necesario declarar la variable con struct 
+struct point my_varible;
+
+
+
+// --- another way to declaration using 'typedef'
+typedef struct{
+	float x;
+	float y; 
+} point;
+
+//de esta forma es  no es necesario declarar la variable con struct 
+point p;
+
+p.x = 0.1;
+p.y = 10.0 
+
+float length = (p.x * p.x * p.x * p.y * p.y);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
