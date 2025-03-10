@@ -13,7 +13,7 @@ int main(int argc, char** argv){
 
 	puts("hello, world!");
 
-// Use a for loop to print out Hello World! five times.
+// Use a for loop to puts out Hello World! five times.
 
 	int i = 0;
 	for(i=0; i<5; i++){
@@ -22,7 +22,7 @@ int main(int argc, char** argv){
 	
 	puts("***");
 	puts("***");
-// › Use a while loop to print out Hello World! five times.
+// › Use a while loop to puts out Hello World! five times.
 
 	i = 0;
 	while(i<5){
@@ -42,109 +42,98 @@ int main(int argc, char** argv){
 // › What built in types are there other than the ones listed?
 	puts("***");
 	puts("***");
-
-exist several types of diferents variable in C:
-
-1. integer types (exact width)
-
-	These provide more control over the size of integers:
+	puts("The answer is in response.md file");
 
 
-	#include <stdint.h>
+// › What other conditional operators are there other than greater than >, and less than <?
+	puts("***");
+	puts("***");
 
-	int8_t a;      ==> 8-bit signed integer 
-	unint8_t b;    ==> 8-bit unsigned integer 
+/*
+ *
+ * >=
+ * <=
+ * ==
+ * !=
+ *
+ * */
+// › What other mathematical operators are there other than add +, and subtract -?
+//› What other mathematical operators are there other than add +, and subtract -?
+	puts("***");
+	puts("***");
+	/*
+	   multipplication *
+	   division /
+	   modulo %
+	   increment ++
+	   decrement --
 
-	int16_t a;      ==> 16-bit signed integer 
-	unint16_t b;    ==> 16-bit unsigned integer 
+	*/
 
-	int32_t a;      ==> 32-bit signed integer 
-	unint32_t b;    ==> 32-bit unsigned integer 
-
-	int64_t a;      ==> 64-bit signed integer 
-	unint64_t b;    ==> 64-bit unsigned integer 
-
-	La palabra signed y unsigned nos dice como se interpretan los valores
-	almacenados en un byte(8 bits)
-
-	signed ==> ( + y - ) Define que la estructura de datos va tener signo negativo o positivo (con signo).
-	unsigned ==>  ( - ) Define que la estructura de datos va ser positiva.
+// › What is the += operator, and how does it work?
+	puts("***");
+	puts("***");
+	/*
+	 * it is short cut for increment statement instead of doing x  = x + 1 you can performance this action 
+	shorter doing x++
+	*/
 
 
-2. Extended integer types :
+//›What is the do loop, and how does it work?
+	puts("***");
+	puts("***");
+	/*
+	 * loop is a iterator in C language:
+	 *  for (declaration;condition;increment of variable){
+	 *  	performance repetition
+	 *
+	 *  }
+	*/
 
-	type 			Meaning 
-	short int 		At least 16 bits 
-	long int		At least 32 bits
-	long long int           At least 64 bits
 
-	examples:
-	 shot int s = 10;
-	 long int l = 100000L;
-	 long long int ll = 10000000000LL;
 
-3. void type:
+//› What is the switch statement and how does it work?
+	puts("***");
+	puts("***");
+	/*
+	 * Estructura de control del lenguaje c que permite ejecutar opciones de 
+	 * bloque de codigo segun el valor de una expresion o valor 
+	 *  }
+	*/
+	int pivote = 2;
+	switch(pivote ){
+		case 1:
+			puts("uno \n");
+			break;
+		case 2:
+			puts("dos \n");
+			break;
+		case 3:
+			puts("tres \n");
+			break;
+		default: puts("el default del switch");
 
-	represent no values (used in functions thtat return nothing).
 
-	void doNothing(){
+
 
 	}
 
-	Also used in generic pointers (void *)
-	void *ptr;
-
-4. Boolean type (_Boolean)
-
-	<stdbool.h> allow using true and false instead of 1 and 0.
-
-	#include <stdbool.h>
-	 
-	bool isActive = true;
-	_Bool is Running = 1 // alternative without <stdbool.>
-
-
-5. Complex Numbers (_Complex & _Imaginary)
-C99+ introduced complex numbers.
-<complex.h> provides double _Complex, float _Complex, etc.
-c
-Copy
-Edit
-#include <complex.h>
-
-double complex z = 1.0 + 2.0 * I;  // 1 + 2i
-
-
-6. Character Types
-Type	Size	Purpose
-char	1 byte	Stores characters
-unsigned char	1 byte	Only positive values (0 to 255)
-signed char	1 byte	Can be negative (-128 to 127)
-wchar_t	Varies	Stores wide characters (Unicode)
-
-#include <wchar.h>
-
-wchar_t wch = L'ß';  // Stores Unicode characters
 
 
 
-
-Summary Table
-Type Category	Examples
-Integer Types	short, int, long, long long
-Fixed-Width Integers	int8_t, uint32_t, int64_t (from <stdint.h>)
-Floating-Point Types	float, double, long double
-Boolean Type	_Bool (or bool from <stdbool.h>)
-Character Types	char, signed char, unsigned char, wchar_t
-Void Type	void, void *
-Complex Types	double _Complex, float _Complex
-Generic Type	void * (can hold any type of pointer)
+//› What is the break keyword and what does it do?
+	puts("***");
+	puts("***");
 
 
+//› What is the continue keyword and what does it do?
+	puts("***");
+	puts("***");
 
 
-
-
+//› What does the typedef keyword do exactly?
+	puts("***");
+	puts("***");
 
 
 
