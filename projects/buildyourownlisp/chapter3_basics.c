@@ -135,6 +135,15 @@ int main(int argc, char** argv){
 	puts("***");
 	puts("***");
 
+	typedef int x ;
+	x a = 23;
+	puts("%d",a);
+	// typedef es una palabra reservado del lenguaje c que produce un alias 
+	// del tipo de dato que se le da. 
+
+
+
+
 
 
 
