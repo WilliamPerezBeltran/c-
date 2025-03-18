@@ -26,3 +26,6 @@ g() {
 And then you can execute the file directly:
 -  g <file.c>
 
+
+In this project the formater that we use is:
+- clang-format -i archivo.c
